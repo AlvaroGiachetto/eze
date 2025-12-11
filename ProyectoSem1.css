@@ -1,0 +1,141 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+.layout{
+    display: flex;
+    max-width: 100%;
+}
+header{
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+header img{
+    max-width: 45px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #48e;
+    border-bottom: 1px solid black;
+}
+.links{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.links:hover{
+    background-color: #3ebbf5;
+}
+
+.container{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+        top: 50px;
+}
+.noticias{
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 5px;
+    flex-shrink: 2;
+    overflow: auto;
+    background-color: #ffffff;
+}
+.cards{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    width: 50%;
+    background-color: #b32929;
+}
+.cards img{
+    width: 60%;
+    margin: auto;
+    border: 3px solid black;
+    border-radius:20px;
+}
+.cards a{
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 20px;
+    width: fit-content;
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+}
+.anuncios{
+    display: flex;
+    position: sticky;
+    width: 30%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #ffffff;
+    border: 3px solid black;
+    height: 50%;
+    gap: 5px;
+    z-index: 5;
+    top: 30px;
+}
+.anuncios h1{
+    max-height: 100px;
+    max-width: 100%;
+}
+.box{
+    border: 3px solid black;
+    border-radius:20px;
+    max-width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    background-color: black;
+}
+.tipos{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-bottom: 3px solid black;
+    border-radius: 20px;
+}
+.anuncios img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 20px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+}
